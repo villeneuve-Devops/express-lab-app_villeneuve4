@@ -18,7 +18,7 @@ This module provisions (or references) the S3 bucket + DynamoDB table for Terraf
 
 ```bash
 git clone https://github.com/Here2ServeU/express-t2s-collection
-cd express-t2s-app-v5/terraform/backend
+cd express-t2s-app-v4/terraform/backend
 terraform init
 terraform apply -auto-approve
 ```
