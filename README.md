@@ -129,7 +129,7 @@ cd ../ecr         && terraform destroy -auto-approve
 ```
 
 3. If Terraform destroy fails with **DependencyViolation** (common with ALBs, ENIs, IGWs), use:
-- Do it at the root level (express-t2s-app-v5/)
+- Do it at the root level (express-t2s-app-v4/)
 ```bash
 chmod +x scripts/cleanup.sh
 export FORCE_TERMINATE_INSTANCES=true
