@@ -3,7 +3,7 @@ set -eu
 
 # -------- Config (env or args) --------
 AWS_REGION="${AWS_REGION:-us-east-1}"
-REPO_NAME="${REPO_NAME:-t2s-express-app}"
+REPO_NAME="${REPO_NAME:-express-lab-app_villeneuve4}"
 APP_DIR="${APP_DIR:-$(cd "$(dirname "$0")"/../../app && pwd)}"
 PLATFORM="${PLATFORM:-linux/amd64}"   # single platform only
 TAG="latest"                          # always latest
@@ -52,5 +52,5 @@ echo "Pushed: $ECR_URI:$TAG"
 # -------- Tips --------
 echo
 echo "Next steps:"
-echo "  kubectl -n apps set image deploy/express-t2s app=$ECR_URI:$TAG"
-echo "  kubectl -n apps rollout status deploy/express-t2s"
+echo "  kubectl -n apps set image deploy/express-lab app=$ECR_URI:$TAG"
+echo "  kubectl -n apps rollout status deploy/express-lab"

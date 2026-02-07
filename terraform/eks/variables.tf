@@ -7,7 +7,7 @@ variable "region" {
 variable "name" {
   description = "Cluster/base name"
   type        = string
-  default     = "t2s-eks"
+  default     = "lab-eks"
 }
 
 variable "kubernetes_version" {
@@ -50,7 +50,7 @@ variable "tags" {
   description = "Common tags"
   type        = map(string)
   default     = {
-    Project = "express-t2s"
+    Project = "express-lab"
     Env     = "dev"
   }
 }
